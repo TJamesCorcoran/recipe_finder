@@ -11,19 +11,19 @@ I use "unicorn" and "foreman" because Heroku uses those and they're safe default
 
 ## To run
 
-# cd .
-# sudo apt install ruby-foreman
-# bundle install
-# rake assets:precompile
-# foreman start web -p5000
-# surf to localhost://5000
+1. cd .
+1. sudo apt install ruby-foreman
+1. bundle install
+1. rake assets:precompile
+1. foreman start web -p5000
+1. surf to localhost://5000
 
 ## Bugs
 
 * Has zero programatic test coverage / rspecs.  Unacceptable!
 * I worry about user input validation.  Can user supply javascript via search field? Who knows!
 * using bootstrap, but style does not match example.
-    * Move "submit" button to R of search field
+    * move "submit" button to R of search field
 	* add space around table
 * method of getting 20 results is brittle - better to download a page, count results, keep iterating. No time to revisit.
 
